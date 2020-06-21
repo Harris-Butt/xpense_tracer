@@ -1,0 +1,10 @@
+{
+    "app-header": "Expense tracker",
+    "app-balance": "Balance",
+    "app-income": "Income",
+    "app-expense": "Expense",
+    "app-add-new-transaction-header": "Add New Transaction",
+    "app-add-new-transaction-description": "Description",
+    "app-add-new-transaction-amount":"Amount",
+    "app-add-new-transaction-button": "Add new transaction"
+}
