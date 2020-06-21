@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { IntlProvider } from 'react-intl';
+import English from './languages/en-Us.json';
+import Urdu from './languages/ur-Pk.json';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <IntlProvider locale messages>
     <App />
-  </React.StrictMode>,
+  </IntlProvider>,
   document.getElementById('root')
 );
 
