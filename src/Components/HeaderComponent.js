@@ -25,7 +25,7 @@ const HeaderComponent = () => {
             className={classes.media}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h4" component="h4">
                 <FormattedMessage
                     id="app-header"
                     defaultMessage="Expense Tracker"

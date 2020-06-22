@@ -32,14 +32,14 @@ const TotalCreditComponent = () => {
             
           />
           <CardContent>
-            <Typography gutterBottom variant="h4" component="h4">
+            <Typography gutterBottom variant="h5" component="h5">
             <FormattedMessage
               id="app-balance"
               defaultMessage="Total Balance">
              Total Balance
              </FormattedMessage>
             </Typography>
-            <Typography gutterBottom variant="h3" component="h3">
+            <Typography gutterBottom variant="h5" component="h5">
               <FormattedMessage id="app-currency" defaultMessage="Rs">
                 Rs
               </FormattedMessage>
