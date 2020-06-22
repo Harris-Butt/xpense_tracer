@@ -84,11 +84,11 @@ const  NewTransactionComponent = () => {
             fullWidth
             name="amount"
             label=
-            {<FormattedMessage id="app-add-new-transaction-amount" defaultMessage="mount">"Amount"</FormattedMessage>}
+            {<FormattedMessage id="app-add-new-transaction-amount" defaultMessage="amount">"Amount"</FormattedMessage>}
             
             type="number"
             id="amount"
-            autoComplete="mount"
+            autoComplete="amount"
             value={amount}
             onChange={(e)=>setAmount(e.target.value)}
           />

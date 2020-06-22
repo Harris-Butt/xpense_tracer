@@ -13,6 +13,9 @@ const useStyles = makeStyles({
     media: {
       height: 20,
     },
+    plus:{
+      background:"green"
+    }
   });
 
 
@@ -33,7 +36,7 @@ const IncomeComponent = ({incomeAmount}) => {
              Your Income
              </FormattedMessage>
             </Typography>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2" className={classes.plus}>
             <FormattedMessage id="app-currency" defaultMessage="Rs">
                 Rs
             </FormattedMessage>

@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     media: {
       height: 20,
     },
+    minus:{
+      background: "#FFCCCB"
+    }
   });
 
 
@@ -35,7 +38,7 @@ const ExpenseComponent = ({expenseAmount}) => {
               Your Expense
              </FormattedMessage>
             </Typography>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2" className={classes.minus}>
             <FormattedMessage id="app-currency" defaultMessage="Rs">
                 Rs 
             </FormattedMessage>
