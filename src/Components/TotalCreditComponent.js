@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {FormattedMessage} from 'react-intl'
+import { TransactionsContext }  from '../Contexts/TransactionsState'
+
 
 
 const useStyles = makeStyles({
@@ -20,20 +21,30 @@ const useStyles = makeStyles({
 
 const TotalCreditComponent = () => {
     const classes = useStyles();
+    const {transactions} = useContext(TransactionsContext)
+    const amounts  = transactions.map(transaction=>transaction.amount);
+    const totalCredit = amounts.reduce((acc,item)=>(acc+item),0).toFixed(2);
     return (
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image="C:\Users\workbook\Documents\GitHub\xpense_tracker\public\HeaderImg.jpg"
-            title="Contemplative Reptile"
+            
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h4" component="h4">
+            <FormattedMessage
+              id="app-balance"
+              defaultMessage="Total Balance">
              Total Balance
+             </FormattedMessage>
             </Typography>
-            <Typography gutterBottom variant="h5" component="h2">
-             $ 0.00
+            <Typography gutterBottom variant="h3" component="h3">
+              <FormattedMessage id="app-currency" defaultMessage="Rs">
+                Rs
+              </FormattedMessage>
+              &nbsp;
+              {totalCredit}
             </Typography>
           </CardContent>
         </CardActionArea>

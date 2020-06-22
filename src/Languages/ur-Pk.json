@@ -1,10 +1,13 @@
 {
+    "app-currency": "روپے",
+    "app-language": "زبان",
     "app-header": "اخراجات ٹریکر ",
     "app-balance": "بیلنس",
     "app-income": " آمدنی",
     "app-expense": "اخراجات",
+    "app-history": "ریکارڈ",
     "app-add-new-transaction-header": " نئی ٹرانزیکشن کا اندراج",
     "app-add-new-transaction-description": "تفصیل",
-    "app-add-new-transaction-amount":"رقم",
+    "app-add-new-transaction-amount":"( رقم ( اخراجات کے لئے منفی -  آمدنی کے لئے جمع",
     "app-add-new-transaction-button": " نئی ٹرانزیکشن کا اندراج مکمل کریں"
 }
